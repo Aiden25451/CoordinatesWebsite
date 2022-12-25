@@ -1,1 +1,1 @@
-web: gunicorn coords-app.wsgi –log-file –
+web: gunicorn CoordinatesWebsite.wsgi –log-file –
