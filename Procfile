@@ -1,0 +1,1 @@
+web: gunicorn coords-app.wsgi –log-file –

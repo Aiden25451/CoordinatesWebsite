@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- My Css page -->
+    <link rel="stylesheet" href="{% static 'calculator/style.css' %}">
+
+    <title>FUCK MATH</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="row title">
+            HELLO AVA
+        </div>
+        <div class="row">
+            <div class = "column col-sm-6">
+                Coordinates:
+            
+            
+                <br>(<div id = "x1" contenteditable = "true" class = "input">x</div>
+                <div id = "y1" contenteditable = "true" class = "input">y</div>)
+                <br>(<div id = "x2" contenteditable = "true" class = "input">x</div>
+                <div id = "y2" contenteditable = "true" class = "input">y</div>)
+            </div>
+            
+            <div class = "column col-sm-6">
+                <input type = "button" onclick = "myfunction()" value = "Click Me"> 
+            </div>   
+        </div>
+        <div class="row">
+            <p>Results: <br>y = mx + b </p>
+            <p id = "m">b = </p>
+            <p id = "b">m = </p>
+        </div>
+    </div>
+    
+    <script src="{% static 'calculator/brain.js' %}"></script>
+    
+    
+</body>
+</html>
+
+
+
