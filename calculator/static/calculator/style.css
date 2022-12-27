@@ -1,5 +1,8 @@
 body{
-    background-color: aquamarine;
+    background-image: url('images/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .title{
@@ -17,7 +20,7 @@ body{
 }
 
 .row {
-    background-color:aliceblue;
+    background-color: rgba(255, 255, 255, 0.5);
     border-color: black;
     border-width: 20px;
 }

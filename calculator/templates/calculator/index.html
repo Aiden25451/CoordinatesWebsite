@@ -13,7 +13,7 @@
     <!-- My Css page -->
     <link rel="stylesheet" href="{% static 'calculator/style.css' %}">
 
-    <title>FUCK MATH</title>
+    <title>De Nuke</title>
 </head>
 <body>
     
@@ -24,13 +24,26 @@
         </div>
         <div class="row">
             <div class = "column col-sm-6">
-                Coordinates:
-            
-            
-                <br>(<div id = "x1" contenteditable = "true" class = "input">x</div>
-                <div id = "y1" contenteditable = "true" class = "input">y</div>)
-                <br>(<div id = "x2" contenteditable = "true" class = "input">x</div>
-                <div id = "y2" contenteditable = "true" class = "input">y</div>)
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Coordinates</th>
+                    </tr>
+                    <tr>
+                        <td>Coord 1</td>
+                        <td>
+                            (<div id = "x1" contenteditable = "true" class = "input">x</div>
+                            <div id = "y1" contenteditable = "true" class = "input">y</div>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coord 2</td>
+                        <td>
+                            (<div id = "x2" contenteditable = "true" class = "input">x</div>
+                            <div id = "y2" contenteditable = "true" class = "input">y</div>)
+                        </td>
+                    </tr>
+                </table>
             </div>
             
             <div class = "column col-sm-6">
@@ -38,9 +51,16 @@
             </div>   
         </div>
         <div class="row">
-            <p>Results: <br>y = mx + b </p>
-            <p id = "m">b = </p>
-            <p id = "b">m = </p>
+            <table>
+                <tr>
+                    <th><br><br>Results: y = mx + b </th>
+                </tr>
+                <tr>
+                    <td><p id = "m">b = </p></td>
+                </tr>
+                <tr>
+                    <td><p id = "b">m = </td>
+            </table>
         </div>
     </div>
     

@@ -1,5 +1,9 @@
 //document.getElementById("title").innerHTML = "JavaScript!";
 
+// function disapear() {
+//     document.getElementsByClassName(input).innerHTML = ""
+// }
+
 function myfunction() {   
     var x1 = document.getElementById("x1").innerHTML;  
     var y1 = document.getElementById("y1").innerHTML; 
@@ -230,7 +234,7 @@ function determinant(matrix, matrix_size){
     
     answer = matrix_multiplication(matrixAt2Y, matrixAt1AInv)
 
-    document.getElementById("m").innerHTML = "m = " + answer[0] + " | ";
+    document.getElementById("m").innerHTML = "m = " + answer[0];
     document.getElementById("b").innerHTML = "b = " + answer[1];
 
     
