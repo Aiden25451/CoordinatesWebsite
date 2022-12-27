@@ -13,58 +13,89 @@
     <!-- My Css page -->
     <link rel="stylesheet" href="{% static 'calculator/style.css' %}">
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <title>De Nuke</title>
 </head>
 <body>
     
     
     <div class="container">
-        <div class="row title">
-            HELLO AVA
+        <div class="row" style="margin-top: 50px;">
+            <div class = "column col-sm-12">
+                <h1 class="title">De Nuke</h1>
+            </div>
         </div>
-        <div class="row">
-            <div class = "column col-sm-6">
+        <div class="row" style="padding-top: 50px;">
+            <div class = "column col-sm-1"></div>
+            <div class = "column col-sm-2">
                 <table>
+                    <tr>
+                        <th>Degree</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select id="degree" onchange="select()">
+                                <option value = 1>One</option>
+                                <option value = 2>Two</option>
+                                <option value = 3>Three</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class = "column col-sm-4">
+                <table id = "Coordinates">
                     <tr>
                         <th></th>
                         <th>Coordinates</th>
                     </tr>
-                    <tr>
+                    <tr id = "tr1">
                         <td>Coord 1</td>
                         <td>
-                            (<div id = "x1" contenteditable = "true" class = "input">x</div>
-                            <div id = "y1" contenteditable = "true" class = "input">y</div>)
+                            (<div id = "x1" contenteditable = "true" class = "input" placeholder="x"></div>
+                            <div id = "y1" contenteditable = "true" class = "input" placeholder="y"></div>)
                         </td>
                     </tr>
-                    <tr>
+                    <tr id = "tr2">
                         <td>Coord 2</td>
                         <td>
-                            (<div id = "x2" contenteditable = "true" class = "input">x</div>
-                            <div id = "y2" contenteditable = "true" class = "input">y</div>)
+                            (<div id = "x2" contenteditable = "true" class = "input" placeholder="x"></div>
+                            <div id = "y2" contenteditable = "true" class = "input" placeholder="y"></div>)
                         </td>
                     </tr>
                 </table>
             </div>
-            
-            <div class = "column col-sm-6">
-                <input type = "button" onclick = "myfunction()" value = "Click Me"> 
+
+            <div class = "column col-sm-3">
+                <table id="answer">
+                    <tr>
+                        <th>Results: y = mx + b </th>
+                    </tr>
+                    <tr>
+                        <td><p>m1 = </p></td>
+                    </tr>
+                    <tr>
+                        <td><p>m = </td>
+                </table>
             </div>   
+
+            <div class = "column col-sm-2">
+                <table>
+                    <tr>
+                        <th>Submit</th>
+                    </tr>
+                    <tr>
+                        <th><input style="float:left" type = "button" onclick = "myfunction()" value = "Click Me"> </th>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="row">
-            <table>
-                <tr>
-                    <th><br><br>Results: y = mx + b </th>
-                </tr>
-                <tr>
-                    <td><p id = "m">b = </p></td>
-                </tr>
-                <tr>
-                    <td><p id = "b">m = </td>
-            </table>
-        </div>
+        
     </div>
     
-    <script src="{% static 'calculator/brain.js' %}"></script>
+    <script src="{% static 'calculator/main.js' %}"></script>
     
     
 </body>

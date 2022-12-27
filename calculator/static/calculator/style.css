@@ -3,6 +3,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position:center;
+}
+
+[contentEditable=true]:empty:before {
+    content: attr(placeholder);
+    opacity: 0.8;
 }
 
 .title{
@@ -10,12 +16,12 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5em;
     color:crimson;
+    text-align: center;
     
 }
  
 .container {
-    width:max-content;
-    width:80%;
+    /* width:max-content; */
     text-align:center;
 }
 
